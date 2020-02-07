@@ -6,4 +6,6 @@ Natural esm code splitting using dynamic import.
 
 Change the language in browser to french/es/hi/ar/fr-ca to check this.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+The output code split :
+
+![alt text](https://user-images.githubusercontent.com/8266671/74032555-3b036d80-49da-11ea-8bd7-b41bcbc95d92.png)
