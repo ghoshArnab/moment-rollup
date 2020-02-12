@@ -11,13 +11,13 @@ export default {
 	input: 'src/main.js',
 	output: {
 		dir: 'public',
-		format: 'esm', // immediately-invoked function expression — suitable for <script> tags
+		format: 'esm',
 		sourcemap: false
 	},
 	plugins: [
-		resolve(), // tells Rollup how to find date-fns in node_modules
+		resolve(), // tells Rollup how to find moment in node_modules
 		babel(),
-		commonjs(), // converts date-fns to ES modules
+		commonjs(), // converts moment to ES modules
 		production && terser() // minify, but only in production
 	]
 };
