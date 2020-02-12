@@ -15,7 +15,12 @@ var span = document.querySelector('#time-now');
 	This supports esm code splitting
 */
 export default async function update() {
-    const getLocale = navigator.language.toLocaleLowerCase();
+
+    const browserLocale = navigator.language.toLocaleLowerCase();
+    const operatorLocale = ""; /* get operator locale from infinity operator profile page */
+
+    const getLocale = operatorLocale || browserLocale;
+
     switch (getLocale) {
         case 'fr':
             await import(`moment/locale/fr`);
